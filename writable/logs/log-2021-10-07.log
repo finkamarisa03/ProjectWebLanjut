@@ -1,0 +1,81 @@
+CRITICAL - 2021-10-07 00:20:24 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-10-07 00:21:34 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-10-07 01:04:15 --> Cannot declare class App\Models\PostModel, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2021-10-07 01:08:14 --> Column 'password' cannot be null
+CRITICAL - 2021-10-07 01:08:14 --> Column 'password' cannot be null
+#0 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(329): mysqli->query('INSERT INTO `us...')
+#1 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2277): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\Model.php(259): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\BaseModel.php(774): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\Model.php(686): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\hellodunia\app\Controllers\templating.php(47): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\templating->saveRegister()
+#9 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\templating))
+#10 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\hellodunia\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2021-10-07 01:10:00 --> Column 'password' cannot be null
+CRITICAL - 2021-10-07 01:10:00 --> Column 'password' cannot be null
+#0 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(329): mysqli->query('INSERT INTO `us...')
+#1 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2277): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\Model.php(259): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\BaseModel.php(774): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\Model.php(686): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\hellodunia\app\Controllers\templating.php(47): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\templating->saveRegister()
+#9 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\templating))
+#10 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\hellodunia\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2021-10-07 01:14:04 --> Undefined property: App\Controllers\templating::$usermodel
+#0 C:\xampp\htdocs\hellodunia\app\Controllers\templating.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 47)
+#1 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\templating->saveRegister()
+#2 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\templating))
+#3 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\hellodunia\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2021-10-07 01:14:18 --> Column 'password' cannot be null
+CRITICAL - 2021-10-07 01:14:18 --> Column 'password' cannot be null
+#0 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(329): mysqli->query('INSERT INTO `us...')
+#1 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2277): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\Model.php(259): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\BaseModel.php(774): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\Model.php(686): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\hellodunia\app\Controllers\templating.php(47): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\templating->saveRegister()
+#9 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\templating))
+#10 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\hellodunia\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2021-10-07 01:24:58 --> Column 'password' cannot be null
+CRITICAL - 2021-10-07 01:24:58 --> Column 'password' cannot be null
+#0 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(329): mysqli->query('INSERT INTO `us...')
+#1 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2277): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\Model.php(259): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\BaseModel.php(774): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\Model.php(686): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\hellodunia\app\Controllers\templating.php(47): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\templating->saveRegister()
+#9 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\templating))
+#10 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\hellodunia\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#13 {main}

@@ -1,0 +1,24 @@
+CRITICAL - 2021-09-22 23:49:24 --> Undefined variable $rotes
+#0 C:\xampp\htdocs\hellodunia\app\Config\Routes.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 44)
+#1 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\CodeIgniter.php(796): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\CLI\Console.php(61): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\hellodunia\spark(65): CodeIgniter\CLI\Console->run()
+#6 {main}
+CRITICAL - 2021-09-22 23:49:40 --> Undefined variable $rotes
+#0 C:\xampp\htdocs\hellodunia\app\Config\Routes.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 44)
+#1 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\CodeIgniter.php(796): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\CLI\Console.php(61): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\hellodunia\spark(65): CodeIgniter\CLI\Console->run()
+#6 {main}
+CRITICAL - 2021-09-22 23:53:21 --> Undefined variable $rotes
+#0 C:\xampp\htdocs\hellodunia\app\Config\Routes.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 44)
+#1 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\CodeIgniter.php(796): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\CLI\Console.php(61): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\hellodunia\spark(65): CodeIgniter\CLI\Console->run()
+#6 {main}

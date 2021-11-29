@@ -1,0 +1,41 @@
+CRITICAL - 2021-10-21 00:19:38 --> Call to undefined method CodeIgniter\Router\RouteCollection::posts()
+#0 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\CodeIgniter.php(796): require()
+#1 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#2 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\hellodunia\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+ERROR - 2021-10-21 01:53:17 --> Table 'mydatabase.posts' doesn't exist
+CRITICAL - 2021-10-21 01:53:17 --> Table 'mydatabase.posts' doesn't exist
+#0 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(329): mysqli->query('SELECT 1\nFROM `...')
+#1 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\Validation\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\Validation\Validation.php(312): CodeIgniter\Validation\Rules->is_unique('abc', 'slug', Array, NULL)
+#6 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\Validation\Validation.php(159): CodeIgniter\Validation\Validation->processRules('slug', 'Slug', 'abc', Array, Array)
+#7 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\Controller.php(183): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\hellodunia\app\Controllers\AdminPostsController.php(31): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\AdminPostsController->store()
+#10 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPostsController))
+#11 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\hellodunia\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+ERROR - 2021-10-21 02:35:49 --> Table 'mydatabase.posts' doesn't exist
+CRITICAL - 2021-10-21 02:35:49 --> Table 'mydatabase.posts' doesn't exist
+#0 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(329): mysqli->query('SELECT 1\nFROM `...')
+#1 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\Validation\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\Validation\Validation.php(312): CodeIgniter\Validation\Rules->is_unique('abc', 'slug', Array, NULL)
+#6 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\Validation\Validation.php(159): CodeIgniter\Validation\Validation->processRules('slug', 'Slug', 'abc', Array, Array)
+#7 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\Controller.php(183): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\hellodunia\app\Controllers\AdminPostsController.php(31): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\AdminPostsController->store()
+#10 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPostsController))
+#11 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\hellodunia\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\hellodunia\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#14 {main}

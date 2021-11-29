@@ -1,0 +1,3 @@
+CRITICAL - 2021-10-14 00:08:38 --> Cannot declare class App\Controllers\AdminPostController, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}

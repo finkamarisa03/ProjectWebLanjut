@@ -1,0 +1,191 @@
+ERROR - 2021-11-24 14:43:56 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+CRITICAL - 2021-11-24 14:43:56 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+#0 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\Database\BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\Model.php(197): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\xampp\htdocs\WeblanPrak_Arussurat\app\Controllers\AdminSuratMasukController.php(12): CodeIgniter\BaseModel->findAll()
+#5 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\AdminSuratMasukController->index()
+#6 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminSuratMasukController))
+#7 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\WeblanPrak_Arussurat\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2021-11-24 15:07:47 --> Table 'user' already exists
+CRITICAL - 2021-11-24 15:12:24 --> Cannot declare class App\Models\SuratMasukModel, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-11-24 15:36:11 --> Undefined variable: SuratKeluarModel
+#0 C:\xampp\htdocs\WeblanPrak_Arussurat\app\Controllers\AdminSuratKeluarController.php(73): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 73, Array)
+#1 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\AdminSuratKeluarController->store()
+#2 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminSuratKeluarController))
+#3 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\WeblanPrak_Arussurat\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-11-24 15:58:48 --> Invalid file: /home/index.html
+#0 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/home/index.htm...')
+#1 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\Common.php(1271): CodeIgniter\View\View->render('/home/index.htm...', Array, true)
+#2 C:\xampp\htdocs\WeblanPrak_Arussurat\app\Config\Routes.php(39): view('/home/index.htm...')
+#3 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\CodeIgniter.php(875): CodeIgniter\CodeIgniter->Config\{closure}()
+#4 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\CodeIgniter.php(421): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\WeblanPrak_Arussurat\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-11-24 16:46:03 --> Undefined variable: validation
+#0 C:\xampp\htdocs\WeblanPrak_Arussurat\app\Views\home\input_surat.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 66, Array)
+#1 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\View\View.php(230): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\Common.php(1271): CodeIgniter\View\View->render('/home/input_sur...', Array, true)
+#4 C:\xampp\htdocs\WeblanPrak_Arussurat\app\Config\Routes.php(47): view('/home/input_sur...')
+#5 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\CodeIgniter.php(875): CodeIgniter\CodeIgniter->Config\{closure}()
+#6 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\CodeIgniter.php(421): CodeIgniter\CodeIgniter->startController()
+#7 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\WeblanPrak_Arussurat\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-11-24 16:56:15 --> Class 'Config\UserSuratMasukController' not found
+#0 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\CodeIgniter.php(796): require()
+#1 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#2 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\WeblanPrak_Arussurat\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-24 16:56:16 --> Class 'Config\UserSuratMasukController' not found
+#0 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\CodeIgniter.php(796): require()
+#1 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#2 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\WeblanPrak_Arussurat\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-24 16:56:22 --> Class 'Config\UserSuratMasukController' not found
+#0 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\CodeIgniter.php(796): require()
+#1 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#2 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\WeblanPrak_Arussurat\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-11-24 17:03:26 --> Cannot declare class App\Controllers\AdminSuratMasukController, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-11-24 17:03:49 --> Invalid file: /.php
+#0 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/.php')
+#1 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\Common.php(1271): CodeIgniter\View\View->render('/', Array, true)
+#2 C:\xampp\htdocs\WeblanPrak_Arussurat\app\Controllers\UserSuratMasukController.php(23): view('/', Array)
+#3 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\UserSuratMasukController->create()
+#4 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserSuratMasukController))
+#5 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\WeblanPrak_Arussurat\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-11-24 17:04:01 --> Invalid file: /.php
+#0 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/.php')
+#1 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\Common.php(1271): CodeIgniter\View\View->render('/', Array, true)
+#2 C:\xampp\htdocs\WeblanPrak_Arussurat\app\Controllers\UserSuratMasukController.php(23): view('/', Array)
+#3 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\UserSuratMasukController->create()
+#4 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserSuratMasukController))
+#5 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\WeblanPrak_Arussurat\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-11-24 17:04:58 --> Invalid file: /home/inputdata.php
+#0 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/home/inputdata...')
+#1 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\Common.php(1271): CodeIgniter\View\View->render('/home/inputdata', Array, true)
+#2 C:\xampp\htdocs\WeblanPrak_Arussurat\app\Controllers\UserSuratMasukController.php(23): view('/home/inputdata', Array)
+#3 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\UserSuratMasukController->create()
+#4 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserSuratMasukController))
+#5 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\WeblanPrak_Arussurat\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-11-24 17:05:05 --> Invalid file: /home/inputdata.php
+#0 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/home/inputdata...')
+#1 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\Common.php(1271): CodeIgniter\View\View->render('/home/inputdata', Array, true)
+#2 C:\xampp\htdocs\WeblanPrak_Arussurat\app\Controllers\UserSuratMasukController.php(23): view('/home/inputdata', Array)
+#3 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\UserSuratMasukController->create()
+#4 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserSuratMasukController))
+#5 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\WeblanPrak_Arussurat\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-11-24 17:05:58 --> Invalid file: /.php
+#0 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/.php')
+#1 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\Common.php(1271): CodeIgniter\View\View->render('/', Array, true)
+#2 C:\xampp\htdocs\WeblanPrak_Arussurat\app\Controllers\UserSuratMasukController.php(23): view('/', Array)
+#3 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\UserSuratMasukController->create()
+#4 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserSuratMasukController))
+#5 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\WeblanPrak_Arussurat\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-11-24 17:09:30 --> Invalid file: /.php
+#0 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/.php')
+#1 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\Common.php(1271): CodeIgniter\View\View->render('/', Array, true)
+#2 C:\xampp\htdocs\WeblanPrak_Arussurat\app\Controllers\UserSuratMasukController.php(23): view('/', Array)
+#3 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\UserSuratMasukController->create()
+#4 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserSuratMasukController))
+#5 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\WeblanPrak_Arussurat\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-11-24 17:24:26 --> Invalid file: /.php
+#0 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/.php')
+#1 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\Common.php(1271): CodeIgniter\View\View->render('/', Array, true)
+#2 C:\xampp\htdocs\WeblanPrak_Arussurat\app\Controllers\UserSuratMasukController.php(23): view('/', Array)
+#3 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\UserSuratMasukController->create()
+#4 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserSuratMasukController))
+#5 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\WeblanPrak_Arussurat\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-11-24 18:04:55 --> Invalid file: /.php
+#0 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/.php')
+#1 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\Common.php(1271): CodeIgniter\View\View->render('/', Array, true)
+#2 C:\xampp\htdocs\WeblanPrak_Arussurat\app\Controllers\UserSuratMasukController.php(23): view('/', Array)
+#3 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\UserSuratMasukController->create()
+#4 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserSuratMasukController))
+#5 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\WeblanPrak_Arussurat\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-11-24 18:30:44 --> Invalid file: /.php
+#0 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/.php')
+#1 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\Common.php(1271): CodeIgniter\View\View->render('/', Array, true)
+#2 C:\xampp\htdocs\WeblanPrak_Arussurat\app\Controllers\UserSuratMasukController.php(23): view('/', Array)
+#3 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\UserSuratMasukController->create()
+#4 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserSuratMasukController))
+#5 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\WeblanPrak_Arussurat\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-11-24 21:33:25 --> Invalid file: /.php
+#0 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/.php')
+#1 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\Common.php(1271): CodeIgniter\View\View->render('/', Array, true)
+#2 C:\xampp\htdocs\WeblanPrak_Arussurat\app\Controllers\UserSuratMasukController.php(23): view('/', Array)
+#3 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\UserSuratMasukController->create()
+#4 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserSuratMasukController))
+#5 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\WeblanPrak_Arussurat\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-11-24 21:54:06 --> Invalid file: suratmasukuser/index.php
+#0 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('suratmasukuser/...')
+#1 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\Common.php(1271): CodeIgniter\View\View->render('suratmasukuser/...', Array, true)
+#2 C:\xampp\htdocs\WeblanPrak_Arussurat\app\Controllers\UserSuratMasukController.php(24): view('suratmasukuser/...', Array)
+#3 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\UserSuratMasukController->create()
+#4 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserSuratMasukController))
+#5 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\WeblanPrak_Arussurat\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-11-24 21:56:22 --> Call to a member function findAll() on null
+#0 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\UserSuratMasukController->index()
+#1 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserSuratMasukController))
+#2 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\WeblanPrak_Arussurat\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\WeblanPrak_Arussurat\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#5 {main}
