@@ -6,7 +6,7 @@ class login extends BaseController
 {
 	public function index()
 	{
-		return view('admin_form');
+		return view('login/admin_form');
    }
    
    public function login_action() 
@@ -18,7 +18,6 @@ class login extends BaseController
 
       $cek = $adminmodel->get_data($email, $password);
       
-
       if($cek != null){
         if (($cek['email'] == $email) && ($cek['password'] == $password))
         {
@@ -26,8 +25,8 @@ class login extends BaseController
            session()->set('password', $cek['password']);
            return redirect()->to(base_url('admin'));
         } else {
-           session()->setFlashdata('gagal', 'Username / Password salah');
-           return redirect()->to(base_url('login'));
+           session()->setFlashdata('gagal', 'Email / Password salah');
+           return redirect()->to(base_url('admin'));
         }
     }else{
         session()->setFlashdata('gagal', 'Email / Password salah');
