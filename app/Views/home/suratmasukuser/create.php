@@ -51,7 +51,7 @@ https://templatemo.com/tm-538-digital-trend
                         <a href="home/suratmasukuser/create" class="nav-link smoothScroll">Masukan Surat</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#project" class="nav-link smoothScroll">Lihat Surat Masuk</a>
+                        <a href="/home/suratmasukuser" class="nav-link smoothScroll">Lihat Surat Masuk</a>
                     </li>
                     <li class="nav-item">
                         <a href="/about" class="nav-link contact">Tentang Kami</a>
@@ -61,13 +61,19 @@ https://templatemo.com/tm-538-digital-trend
         </div>
     </nav>
 
-    
-<div class="container">
-    <h1>Form Input Surat</h1>
-
-    <form action="/home/suratmasukuser/store" method="POST">
-       
-                    <div class="form-group">
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                Form Tambah 
+            </div>
+            <div class="card-body">
+            <form action="/home/suratmasukuser/store" method="POST">
+                <div class="row">
+                <div class="form-group">
                             <label for="nomor">Nomor Surat</label>
                             <input type="text" class="form-control <?= ($validation -> hasError('nomor')) ? 'is-invalid' : ''; ?>" id="nomor" name="nomor" value="<?= old('nomor'); ?>">
                             <?php if ($validation -> hasError('nomor')) : ?>
@@ -75,10 +81,8 @@ https://templatemo.com/tm-538-digital-trend
                             <?= $validation -> getError('nomor'); ?>
                             </div>
                             <?php endif; ?>
-                        </div>  
-                    
-
-                    <div class="form-group">
+                        </div>
+                        <div class="form-group">
                             <label for="nama">Nama Surat</label>
                             <input type="text" class="form-control <?= ($validation -> hasError('nama')) ? 'is-invalid' : ''; ?>" id="nama" name="nama" value="<?= old('nama'); ?>">
                             <?php if ($validation -> hasError('nama')) : ?>
@@ -87,8 +91,6 @@ https://templatemo.com/tm-538-digital-trend
                             </div>
                             <?php endif; ?>
                         </div>
-                    
-                        
                         <div class="form-group">
                           
                             <label for="tanggal">Tanggal Surat</label>
@@ -99,7 +101,7 @@ https://templatemo.com/tm-538-digital-trend
                             </div>
                             <?php endif; ?>
                           </div>
-                        
+                          
                         <div class="form-group">
                             <label for="tujuan">Tujuan Surat</label>
                             <input type="text" class="form-control <?= ($validation -> hasError('tujuan')) ? 'is-invalid' : ''; ?>" id="tujuan" name="tujuan" value="<?= old('tujuan'); ?>">
@@ -109,11 +111,15 @@ https://templatemo.com/tm-538-digital-trend
                             </div>
                             <?php endif; ?>
                           </div>
-                        
-                <button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i> Submit</button>
-                
-                </form> 
-</div>
+                      
+                          
+                    </div>
+                    
+                <button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i> Submit</button>                
+                </form>   
+            </div>
+        </div>
+    </div>
 
 <br>
 <br>

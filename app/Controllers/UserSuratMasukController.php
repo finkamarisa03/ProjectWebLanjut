@@ -6,17 +6,20 @@ use App\Controllers\BaseController;
 class UserSuratMasukController extends BaseController
 {
     public function index()
-    {
+    {	
+		
         $SuratMasukUserModel = model("SuratMasukUserModel");
+		$SuratMasukModel = model("SuratMasuKModel");
 		$data = [
-			'suratmasukuser' => $SuratMasukUserModel->findAll()
+			'suratmasukuser' => $SuratMasukUserModel->findAll(),
+			'suratmasuk' => $SuratMasukModel->findAll()
 		];
-		return view("home/suratmasukuser/index", $data);
+		return view("/home/suratmasukuser/index", $data);
     }
-
 
     public function create()
     {
+		
         session();
         $data = [
             'validation' => \Config\Services::validation(),
@@ -30,7 +33,7 @@ class UserSuratMasukController extends BaseController
 		$valid = $this->validate([
 			"nomor" => [
 				"label" => "Nomor",
-				"rules" => "required|is_unique[suratmasukuser.nomor]",
+				"rules" => "required|is_unique[suratmasuk.nomor]",
 				"errors" => [
 					"required" => "{field} Harus Diisi!",
 					"is_unique" => "{filed} sudah ada!"
@@ -53,19 +56,13 @@ class UserSuratMasukController extends BaseController
 				]
 			],
 			"tujuan" => [
-				"label" => "Tujuan",
+				"label" => "Tanggal",
 				"rules" => "required",
 				"errors" => [
 					"{field} Harus Diisi!"
 				]
 			],
-			"dok" => [
-				"label" => "Berkas",
-				"rules" => "required",
-				"errors" => [
-					"{field} Harus Diisi!"
-				]
-			]
+			
 		]);
 
 		if ($valid) {
@@ -74,14 +71,26 @@ class UserSuratMasukController extends BaseController
 				'nama' => $this->request->getVar('nama'),
 				'tanggal' => $this->request->getVar('tanggal'),
 				'tujuan' => $this->request->getVar('tujuan'),
-				'dok' => $this->request->getVar('dok')
+				
 			];
 
 			$SuratMasukUserModel = model("SuratMasukUserModel");
 			$SuratMasukUserModel -> insert($data);
-			return redirect()->to(base_url('home/suratmasukuser/'));
+			return redirect()->to(base_url('/home/suratmasukuser/'));
 		} else {
-			return redirect()->to(base_url('home/suratmasukuser/create'))->withInput()->with('validation', $this->validator);
+			return redirect()->to(base_url('/home/suratmasukuser/create'))->withInput()->with('validation', $this->validator);
 		}
     }
+
+	public function delete($id)
+	{
+		if (session()->get('email') == '') {
+			session()->setFlashdata('gagal', 'Anda belum login');
+			return redirect()->to(base_url('login'));
+		 }
+		$PostModel = model("SuratMasukUserModel");
+		$PostModel->where('id', $id)->delete();
+		return redirect()->to(base_url('/admin/suratmasuk/'));
+		
+	}
 }
