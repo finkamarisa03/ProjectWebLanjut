@@ -30,9 +30,15 @@
             <!-- small box -->
             <div class="small-box bg-info">
               <div class="inner">
-                <h3>150</h3>
+              <?php 
+              $count = 0;
+              foreach ($suratmasuk as $i => $data['suratmasuk'] ) : 
+                $count++;
+                endforeach;
+              ?>
+                <h3><?=$count?></h3>
 
-                <p>Surat Masuk</p>
+                <p>Surat Masuk Valid</p>
               </div>
               <div class="icon">
                 <i class="nav-icon fas fa-arrow-alt-circle-down"></i>
@@ -44,7 +50,13 @@
             <!-- small box -->
             <div class="small-box bg-success">
               <div class="inner">
-                <h3>53</h3>
+              <?php 
+              $count1 = 0;
+              foreach ($suratkeluar as $i => $data['suratkeluar'] ) : 
+                $count1++;
+                endforeach;
+              ?>
+                <h3><?=$count1?></h3>
 
                 <p>Surat Keluar</p>
               </div>
@@ -53,44 +65,72 @@
               </div>
             </div>
           </div>
+
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-warning">
+              <div class="inner">
+              
+                <h3>NULL</h3>
+
+                <p>Surat Masuk Non-Valid</p>
+              </div>
+              <div class="icon">
+                <i class="nav-icon fas fa-arrow-alt-circle-down"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-error">
+              <div class="inner">
+              
+                <h3><?= $count+$count1 ?></h3>
+
+                <p>Total Surat</p>
+              </div>
+              <div class="icon">
+                <i class="nav-icon fas fa-book"></i>
+              </div>
+            </div>
+          </div>
+
         </div>
     
         <!-- /.row -->
         <!-- Main row -->
-        <div class="row">
+        
           <!-- Left col -->
-          <section class="col-lg-7 connectedSortable">
-            <!-- Custom tabs (Charts with tabs)-->
-            <div class="card">
-              <div class="card-header">
-                <h3 class="card-title">
-                  <i class="fas fa-chart-pie mr-1"></i>
-                  Statistik
-                </h3>
-                <div class="card-tools">
-                  <ul class="nav nav-pills ml-auto">
-                    <li class="nav-item">
-                      <a class="nav-link active" href="#revenue-chart" data-toggle="tab">Area</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#sales-chart" data-toggle="tab">Donut</a>
-                    </li>
-                  </ul>
-                </div>
-              </div><!-- /.card-header -->
-              <div class="card-body">
-                <div class="tab-content p-0">
-                  <!-- Morris chart - Sales -->
-                  <div class="chart tab-pane active" id="revenue-chart"
-                       style="position: relative; height: 300px;">
-                      <canvas id="revenue-chart-canvas" height="300" style="height: 300px;"></canvas>
-                   </div>
-                  <div class="chart tab-pane" id="sales-chart" style="position: relative; height: 300px;">
-                    <canvas id="sales-chart-canvas" height="300" style="height: 300px;"></canvas>
-                  </div>
-                </div>
-              </div><!-- /.card-body -->
-            </div>
+               <!-- ABOUT -->
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+     <section class="about section-padding pb-0" id="about">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-lg-7 mx-auto col-md-10 col-12">
+                         <div class="about-info">
+
+                              <h2 class="mb-4" data-aos="fade-up"> Sebuah <strong>Sistem Informasi </strong> Untuk Kegiatan Administrasi Instansi</h2>
+
+                              <p class="mb-0" data-aos="fade-up">Sistem ini dibuat untuk memudahkan suatu instansi dalam kegiatan administrasi. User diluar instansi dapat mengirimkan surat <a href="/admin/suratmasuk/create">disini.</a> 
+                              <br><br><strong>Dengan Mudah</strong> kapan saja dan dimana saja melalui website ini.</p>
+                         </div>
+
+                         <div class="about-image" data-aos="fade-up" data-aos-delay="200">
+
+                          <img src="assets\home\images\working-girl.png" class="img-fluid" alt="office">
+                        </div>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+           
             <!-- /.card -->
 
   </div>
