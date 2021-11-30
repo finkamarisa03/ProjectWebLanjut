@@ -33,6 +33,10 @@ class SuratMasukUser extends Migration
                     'type' => 'VARCHAR',
                     'constraint' => 100
                 ],
+                'dok' => [
+                    'type' => 'MEDIUMBLOB',
+                    'null' => true
+                ]
             ]);
             $this->forge->addKey('id', true);
             $this->forge->createTable('suratmasukuser');

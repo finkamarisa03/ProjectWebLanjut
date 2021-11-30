@@ -32,8 +32,16 @@ class templating extends BaseController
 	// echo view ('layouts/header', $data);
 	// echo view ('layouts/navbar');
     // echo view ('v_posts');
-    // echo view ('layouts/footer');
-    return view('view_admin');
+	// echo view ('layouts/footer');
+	
+	$SuratMasukModel = model("SuratMasukModel");
+	$SuratKeluarModel = model("SuratKeluarModel");
+		$data = [
+				'suratmasuk' => $SuratMasukModel->findAll(),
+				'suratkeluar' => $SuratKeluarModel->findAll()
+		];
+
+    return view('view_admin', $data);
 	}
 
 	public function register()

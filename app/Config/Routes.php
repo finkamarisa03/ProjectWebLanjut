@@ -52,10 +52,9 @@ $routes->get('/about', function (){
 	$data = [
 		'title' => "Tentang Kami"
 	];
-	echo view ('layouts/header',$data);
-	echo view ('layouts/navbar');
+	
     echo view ('v_about');
-    echo view ('layouts/footer');
+    
 });
 $routes->get('/admin', 'templating::admin');
 $routes->get('/admin/suratmasuk', 'AdminSuratMasukController::index');

@@ -13,7 +13,7 @@
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Dashboard v1</li>
+              <li class="breadcrumb-item active">Dashboard</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -66,7 +66,16 @@
                             </div>
                             <?php endif; ?>
                           </div>
-                        
+
+                       <div class="form-group">
+                            <label for="dok">File Surat</label>
+                            <input type="file" class="form-control <?= ($validation -> hasError('dok')) ? 'is-invalid' : ''; ?>" id="dok" name="dok" value="<?= old('dok'); ?>">
+                            <?php if ($validation -> hasError('dok')) : ?>
+                            <div class="invalid-feedback">
+                            <?= $validation -> getError('dok'); ?>
+                            </div>
+                            <?php endif; ?>
+                          </div> 
                     </div>
                     <button type="submit" class="btn btn-primary">
                                 <i class="fas fa-paper-plane"></i> Edit

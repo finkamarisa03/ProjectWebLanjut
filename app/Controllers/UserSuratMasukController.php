@@ -53,13 +53,19 @@ class UserSuratMasukController extends BaseController
 				]
 			],
 			"tujuan" => [
-				"label" => "Tanggal",
+				"label" => "Tujuan",
 				"rules" => "required",
 				"errors" => [
 					"{field} Harus Diisi!"
 				]
 			],
-			
+			"dok" => [
+				"label" => "Berkas",
+				"rules" => "required",
+				"errors" => [
+					"{field} Harus Diisi!"
+				]
+			]
 		]);
 
 		if ($valid) {
@@ -68,6 +74,7 @@ class UserSuratMasukController extends BaseController
 				'nama' => $this->request->getVar('nama'),
 				'tanggal' => $this->request->getVar('tanggal'),
 				'tujuan' => $this->request->getVar('tujuan'),
+				'dok' => $this->request->getVar('dok')
 			];
 
 			$SuratMasukUserModel = model("SuratMasukUserModel");

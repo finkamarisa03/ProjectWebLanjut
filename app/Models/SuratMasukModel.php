@@ -8,6 +8,6 @@ class SuratMasukModel extends Model
 {
 	protected $table                = 'suratmasuk';
 	protected $primaryKey           = 'id';
-	protected $allowedFields        = ['nomor','nama','tanggal','tujuan'];
+	protected $allowedFields        = ['nomor','nama','tanggal','tujuan','dok'];
 	
 }
