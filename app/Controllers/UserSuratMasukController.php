@@ -82,15 +82,5 @@ class UserSuratMasukController extends BaseController
 		}
     }
 
-	public function delete($id)
-	{
-		if (session()->get('email') == '') {
-			session()->setFlashdata('gagal', 'Anda belum login');
-			return redirect()->to(base_url('login'));
-		 }
-		$PostModel = model("SuratMasukUserModel");
-		$PostModel->where('id', $id)->delete();
-		return redirect()->to(base_url('/admin/suratmasuk/'));
-		
-	}
+	
 }

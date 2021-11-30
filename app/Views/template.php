@@ -98,14 +98,34 @@
             </a>
           </li>
 
-<li class="nav-item">
-            <a href="/admin/suratmasuk" class="nav-link">
+          <li class="nav-item ">
+            <a href="#" class="nav-link ">
               <i class="nav-icon fas fa-arrow-alt-circle-down"></i>
               <p>
                 Surat Masuk
+                <i class="fas fa-angle-left right"></i>
+                <span class="badge badge-info right">2</span>
               </p>
             </a>
-</li>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="/admin/suratmasuk" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>
+                    Valid
+                  </p>
+                </a>
+              </li>   
+              </li>
+              <li class="nav-item">
+                <a href="/admin/suratmasuknonvalid" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Tidak Valid</p>
+                </a>
+              </li>
+              
+            </ul>
+          </li>
 
 <li class="nav-item">
             <a href="/admin/suratkeluar" class="nav-link">

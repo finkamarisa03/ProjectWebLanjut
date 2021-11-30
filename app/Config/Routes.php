@@ -59,11 +59,15 @@ $routes->get('/about', function (){
 });
 $routes->get('/admin', 'AdminController::index');
 $routes->get('/admin/suratmasuk', 'AdminSuratMasukController::index');
+$routes->get('/admin/suratmasuknonvalid', 'AdminSuratMasukController::index_nonvalid');
 $routes->get('/admin/suratmasuk/create', 'AdminSuratMasukController::create');
 $routes->get('/admin/suratmasuk/edit/(:segment)', 'AdminSuratMasukController::edit/$1');
+$routes->get('/admin/suratmasuknonvalid/valid/(:segment)', 'AdminSuratMasukController::validasi_data/$1');
 $routes->get('/admin/suratmasuk/delete/(:segment)', 'AdminSuratMasukController::delete/$1');
+$routes->get('/admin/suratmasuknonvalid/delete/(:segment)', 'AdminSuratMasukController::delete_nonvalid/$1');
 $routes->post('/admin/suratmasuk/update/(:segment)', 'AdminSuratMasukController::update/$1');
 $routes->post('/admin/suratmasuk/store', 'AdminSuratMasukController::store');
+$routes->post('/admin/suratmasuk/store_valid', 'AdminSuratMasukController::store_valid');
 
 $routes->get('/admin/suratkeluar', 'AdminSuratKeluarController::index');
 $routes->get('/admin/suratkeluar/create', 'AdminSuratKeluarController::create');
