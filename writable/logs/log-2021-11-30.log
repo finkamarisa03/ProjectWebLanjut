@@ -266,3 +266,23 @@ CRITICAL - 2021-11-30 10:53:29 --> Undefined index: nomor
 #8 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #9 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\SDP\\Do...')
 #10 {main}
+CRITICAL - 2021-11-30 11:43:19 --> Undefined variable: SuratMasukUserModel
+#0 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\app\Controllers\AdminController.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Users\\SDP\\Do...', 19, Array)
+#1 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\AdminController->index()
+#2 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#3 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\SDP\\Do...')
+#6 {main}
+CRITICAL - 2021-11-30 11:43:46 --> Undefined variable: count2
+#0 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\app\Views\view_admin.php(80): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Users\\SDP\\Do...', 80, Array)
+#1 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\vendor\codeigniter4\framework\system\View\View.php(230): include('C:\\Users\\SDP\\Do...')
+#2 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\vendor\codeigniter4\framework\system\Common.php(1271): CodeIgniter\View\View->render('view_admin', Array, true)
+#4 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\app\Controllers\AdminController.php(22): view('view_admin', Array)
+#5 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\AdminController->index()
+#6 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#7 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\SDP\\Do...')
+#10 {main}

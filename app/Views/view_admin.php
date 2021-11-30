@@ -71,10 +71,14 @@
             <!-- small box -->
             <div class="small-box bg-warning">
               <div class="inner">
-              
-                <h3>NULL</h3>
-
-                <p>Surat Masuk Non-Valid</p>
+                <?php
+                $count2 = 0;
+                foreach ($suratmasukuser as $i => $data['suratmasukuser'] ) : 
+                  $count2++;
+                  endforeach;
+                ?>
+                <h3 style="color :white"><?=$count2?></h3>
+                <p style="color : white">Surat Masuk Non-Valid</p>
               </div>
               <div class="icon">
                 <i class="nav-icon fas fa-arrow-alt-circle-down"></i>
@@ -84,7 +88,7 @@
 
           <div class="col-lg-3 col-6">
             <!-- small box -->
-            <div class="small-box bg-error">
+            <div class="small-box bg-danger">
               <div class="inner">
               
                 <h3><?= $count+$count1 ?></h3>

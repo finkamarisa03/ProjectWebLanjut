@@ -11,10 +11,12 @@ class AdminController extends BaseController
          return redirect()->to(base_url('login'));
       }
       $SuratMasukModel = model("SuratMasukModel");
+      $SuratMasukUserModel = model("SuratMasukUserModel");
 	   $SuratKeluarModel = model("SuratKeluarModel");
 		$data = [
 			'suratmasuk' => $SuratMasukModel->findAll(),
-			'suratkeluar' => $SuratKeluarModel->findAll()
+			'suratkeluar' => $SuratKeluarModel->findAll(),
+         'suratmasukuser' => $SuratMasukUserModel->findAll()
 		];
 		
     return view('view_admin', $data);
