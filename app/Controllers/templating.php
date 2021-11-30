@@ -32,6 +32,7 @@ class templating extends BaseController
 	// echo view ('layouts/header', $data);
 	// echo view ('layouts/navbar');
     // echo view ('v_posts');
+<<<<<<< HEAD
 	// echo view ('layouts/footer');
 	
 	$SuratMasukModel = model("SuratMasukModel");
@@ -41,6 +42,17 @@ class templating extends BaseController
 				'suratkeluar' => $SuratKeluarModel->findAll()
 		];
 
+=======
+    // echo view ('layouts/footer');
+
+	$SuratMasukModel = model("SuratMasukModel");
+	$SuratKeluarModel = model("SuratKeluarModel");
+		$data = [
+			'suratmasuk' => $SuratMasukModel->findAll(),
+			'suratkeluar' => $SuratKeluarModel->findAll()
+		];
+		
+>>>>>>> 4e751505e6889da1bb1a3d69c257cb3b4ee1f7b1
     return view('view_admin', $data);
 	}
 
