@@ -6,7 +6,11 @@ use App\Controllers\BaseController;
 class AdminSuratKeluarController extends BaseController
 {
     public function index()
-    {
+    {	
+		if (session()->get('email') == '') {
+			session()->setFlashdata('gagal', 'Anda belum login');
+			return redirect()->to(base_url('login'));
+		 }
         $SuratKeluarModel = model("SuratKeluarModel");
 		$data = [
 			'suratkeluar' => $SuratKeluarModel->findAll()
@@ -16,6 +20,10 @@ class AdminSuratKeluarController extends BaseController
 
     public function create()
     {
+		if (session()->get('email') == '') {
+			session()->setFlashdata('gagal', 'Anda belum login');
+			return redirect()->to(base_url('login'));
+		 }
         session();
         $data = [
             'validation' => \Config\Services::validation(),
@@ -25,7 +33,10 @@ class AdminSuratKeluarController extends BaseController
 
 	public function store()
     {
-		
+		if (session()->get('email') == '') {
+			session()->setFlashdata('gagal', 'Anda belum login');
+			return redirect()->to(base_url('login'));
+		 }
 		$valid = $this->validate([
 			"nomor" => [
 				"label" => "Nomor",
@@ -86,6 +97,11 @@ class AdminSuratKeluarController extends BaseController
 
 	public function delete($id)
 	{
+		if (session()->get('email') == '') {
+			session()->setFlashdata('gagal', 'Anda belum login');
+			return redirect()->to(base_url('login'));
+		 }
+
 		$PostModel = model("SuratKeluarModel");
 		$PostModel->where('id', $id)->delete();
 		return redirect()->to(base_url('/admin/suratkeluar/'));
@@ -93,7 +109,12 @@ class AdminSuratKeluarController extends BaseController
 	}
 
 	public function edit($id)
-	{
+	{	
+		if (session()->get('email') == '') {
+			session()->setFlashdata('gagal', 'Anda belum login');
+			return redirect()->to(base_url('login'));
+		 }
+
 		session();
 		$SuratKeluarModel = model("SuratKeluarModel");
         $data = [
@@ -106,6 +127,10 @@ class AdminSuratKeluarController extends BaseController
 
 	public function update($id)
 	{
+		if (session()->get('email') == '') {
+			session()->setFlashdata('gagal', 'Anda belum login');
+			return redirect()->to(base_url('login'));
+		 }
 		$PostModel = model("SuratKeluarModel");
 		$data = $this->request->getPost();
 		$PostModel->update($id, $data);

@@ -40,11 +40,12 @@ $routes->get('/', function () {
     
 });
 
-$routes->get('/home','templating::index');
+$routes->get('/home','Home::index');
 $routes->get('/home/suratmasukuser','UserSuratMasukController::index');
 $routes->get('/home/suratmasukuser/create', 'UserSuratMasukController::create');
 $routes->post('/home/suratmasukuser/store', 'UserSuratMasukController::store');
 $routes->get('/login','AdminController::index');
+$routes->get('/logout','AdminController::logout');
 
 $routes->get('/register','templating::register');
 $routes->post('/saveRegister','templating::saveRegister');
@@ -56,7 +57,7 @@ $routes->get('/about', function (){
     echo view ('v_about');
     
 });
-$routes->get('/admin', 'templating::admin');
+$routes->get('/admin', 'admin::index');
 $routes->get('/admin/suratmasuk', 'AdminSuratMasukController::index');
 $routes->get('/admin/suratmasuk/create', 'AdminSuratMasukController::create');
 $routes->get('/admin/suratmasuk/edit/(:segment)', 'AdminSuratMasukController::edit/$1');

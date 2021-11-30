@@ -10,7 +10,14 @@ class admin extends BaseController
          session()->setFlashdata('gagal', 'Anda belum login');
          return redirect()->to(base_url('login'));
       }
-      return view('admin_view');
+      $SuratMasukModel = model("SuratMasukModel");
+	   $SuratKeluarModel = model("SuratKeluarModel");
+		$data = [
+			'suratmasuk' => $SuratMasukModel->findAll(),
+			'suratkeluar' => $SuratKeluarModel->findAll()
+		];
+		
+    return view('view_admin', $data);
    }
 
    //--------------------------------------------------------------------
