@@ -218,7 +218,14 @@ class AdminSuratMasukController extends BaseController
 				"errors" => [
 					"{field} Harus Diisi!"
 				]
-			]
+				],
+				"dok" => [
+					"label" => "Berkas",
+					"rules" => "required",
+					"errors" => [
+						"{field} Harus Diisi!"
+					]
+				]
 			
 		]);
 
@@ -228,6 +235,7 @@ class AdminSuratMasukController extends BaseController
 				'nama' => $this->request->getVar('nama'),
 				'tanggal' => $this->request->getVar('tanggal'),
 				'tujuan' => $this->request->getVar('tujuan'),
+				'dok' => $this->request->getVar('dok')
 			];
 
 			$SuratMasukModel = model("SuratMasukModel");

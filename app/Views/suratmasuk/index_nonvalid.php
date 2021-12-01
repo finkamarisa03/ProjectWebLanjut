@@ -51,7 +51,7 @@
                 <td><?= $data['nama']; ?> <input type="hidden" name="nama" value="<?= $data['nama'] ?>"></td>
                 <td><?= $data['tanggal']; ?><input type="hidden" name="tanggal" value="<?= $data['tanggal'] ?>"></td>
                 <td><?= $data['tujuan']; ?><input type="hidden" name="tujuan" value="<?= $data['tujuan'] ?>"></td>
-                
+                <td><?= $data['dok']; ?><input type="hidden" name="dok" value="<?= $data['dok'] ?>"></td>
 
                 <td>
                   <button type="submit" class="btn btn-primary"><i class="fas fa-check"></i>Validasi</button>

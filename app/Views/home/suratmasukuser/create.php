@@ -111,7 +111,16 @@ https://templatemo.com/tm-538-digital-trend
                             </div>
                             <?php endif; ?>
                           </div>
-                      
+                          
+                          <div class="form-group">
+                            <label for="dok">File Surat</label>
+                            <input type="file" class="form-control <?= ($validation -> hasError('dok')) ? 'is-invalid' : ''; ?>" id="dok" name="dok" value="<?= old('dok'); ?>">
+                            <?php if ($validation -> hasError('dok')) : ?>
+                            <div class="invalid-feedback">
+                            <?= $validation -> getError('dok'); ?>
+                            </div>
+                            <?php endif; ?>
+                          </div>
                           
                     </div>
                     
