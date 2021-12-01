@@ -48,7 +48,7 @@ https://templatemo.com/tm-538-digital-trend
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a href="home/suratmasukuser/create" class="nav-link smoothScroll">Masukan Surat</a>
+                        <a href="/home/suratmasukuser/create" class="nav-link smoothScroll">Masukan Surat</a>
                     </li>
                     <li class="nav-item">
                         <a href="/home/suratmasukuser" class="nav-link smoothScroll">Lihat Surat Masuk</a>
