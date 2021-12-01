@@ -528,3 +528,23 @@ CRITICAL - 2021-11-30 13:27:48 --> Berkas is not a valid rule.
 #7 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #8 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\SDP\\Do...')
 #9 {main}
+CRITICAL - 2021-11-30 18:36:20 --> Undefined variable: totalTime
+#0 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\vendor\codeigniter4\framework\system\Debug\Toolbar\Views\toolbar.tpl.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Users\\SDP\\Do...', 41, Array)
+#1 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\vendor\codeigniter4\framework\system\Debug\Toolbar.php(495): include('C:\\Users\\SDP\\Do...')
+#2 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\vendor\codeigniter4\framework\system\Debug\Toolbar.php(452): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\app\Config\Events.php(52): CodeIgniter\Debug\Toolbar->respond()
+#4 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#5 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\vendor\codeigniter4\framework\system\Events\Events.php(166): call_user_func(Object(Closure))
+#6 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\vendor\codeigniter4\framework\system\CodeIgniter.php(316): CodeIgniter\Events\Events::trigger('pre_system')
+#7 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-11-30 18:36:22 --> Undefined variable: totalTime
+#0 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\vendor\codeigniter4\framework\system\Debug\Toolbar\Views\toolbar.tpl.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Users\\SDP\\Do...', 41, Array)
+#1 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\vendor\codeigniter4\framework\system\Debug\Toolbar.php(495): include('C:\\Users\\SDP\\Do...')
+#2 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\vendor\codeigniter4\framework\system\Debug\Toolbar.php(452): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\app\Config\Events.php(52): CodeIgniter\Debug\Toolbar->respond()
+#4 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#5 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\vendor\codeigniter4\framework\system\Events\Events.php(166): call_user_func(Object(Closure))
+#6 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\vendor\codeigniter4\framework\system\CodeIgniter.php(316): CodeIgniter\Events\Events::trigger('pre_system')
+#7 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
