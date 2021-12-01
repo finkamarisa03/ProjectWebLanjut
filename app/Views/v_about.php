@@ -4,10 +4,6 @@
 
      <title>Sistem Surat</title>
 <!--
-<<<<<<< HEAD
-DIGITAL TREND
-https://templatemo.com/tm-538-digital-trend
-=======
 
 DIGITAL TREND
 
@@ -36,11 +32,6 @@ https://templatemo.com/tm-538-digital-trend
 </head>
 <body>
 
-
-</head>
-<body>
-
-
         <!-- MENU BAR -->
         <nav class="navbar navbar-expand-lg">
         <div class="container">
@@ -57,13 +48,13 @@ https://templatemo.com/tm-538-digital-trend
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a href="/home/suratmasukuser/create" class="nav-link smoothScroll">Masukan Surat</a>
+                        <a href="assets/home/suratmasukuser/create" class="nav-link smoothScroll">Masukan Surat</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/home/suratmasukuser" class="nav-link smoothScroll">Lihat Surat Masuk</a>
+                        <a href="#project" class="nav-link smoothScroll">Lihat Surat Masuk</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/about" class="nav-link contact">Tentang Kami</a>
+                        <a href="assets/about" class="nav-link contact">Tentang Kami</a>
                     </li>
                 </ul>
             </div>
@@ -75,16 +66,10 @@ https://templatemo.com/tm-538-digital-trend
                <div class="row">
 
                     <div class="col-lg-12 col-12">
-                        <h2 class="mb-5 text-center" data-aos="fade-up">
-                            di Balik Layar
-                            <strong>Sistem Informasi Arus Surat</strong>
-
-                    <div class="col-lg-12 col-12">
 
                         <h2 class="mb-5 text-center" data-aos="fade-up">
                             di Balik Layar
                             <strong>Sistem Informasi Arus Surat</strong>
-
 
                             <br>
                             Ilmu Komputer FMIPA Universitas Lampung
@@ -92,130 +77,57 @@ https://templatemo.com/tm-538-digital-trend
                             <br>
                          <div class="owl-carousel owl-theme" id="project-slide">
                               <div class="item project-wrapper" data-aos="fade-up" data-aos-delay="100">
-                                   <img src="assets/home/images/project/project-image01.jpg" class="img-fluid" alt="project image">
+                                   <img src="assets/images/imam.jpeg" class="img-fluid" alt="project image">
 
                                    <div class="project-info">
-                                        <small>Front-End Developer</small>
-
-
-                                   <div class="project-info">
-                                        <small>Front-End Developer</small>
-
+                                        <small>1917051001</small>
 
                                         <h3>
-                                             <a href="project-detail.html">
+                                             
                                                   <span>Imam Akbar</span>
-                                                  <i class="fa fa-angle-right project-icon"></i>
+                                                  
                                              </a>
                                         </h3>
                                    </div>
                               </div>
 
-                              <div class="item project-wrapper" data-aos="fade-up">
-                                   <img src="assets/home/images/project/project-image02.jpg" class="img-fluid" alt="project image">
-                                   <div class="project-info">
-                                        <small>Website</small>
-
-
-                              <div class="item project-wrapper" data-aos="fade-up">
-                                   <img src="assets/home/images/project/project-image02.jpg" class="img-fluid" alt="project image">
+                              <div class="item project-wrapper" data-aos="fade-up" data-aos-delay="100">
+                                   <img src="assets/images/olivia.jpg" class="img-fluid" alt="project image">
 
                                    <div class="project-info">
-                                        <small>Website</small>
-
+                                        <small>1917051044</small>
 
                                         <h3>
-                                             <a href="project-detail.html">
-                                                  <span>Smart Ladies</span>
-                                                  <i class="fa fa-angle-right project-icon"></i>
+                                             
+                                                  <span>Olivia Desti Riana</span>
+                                                  
                                              </a>
                                         </h3>
                                    </div>
                               </div>
 
-                              <div class="item project-wrapper" data-aos="fade-up">
-                                   <img src="assets/home/images/project/project-image03.jpg" class="img-fluid" alt="project image">
-                                   <div class="project-info">
-                                        <small>Branding</small>
-
-                              <div class="item project-wrapper" data-aos="fade-up">
-                                   <img src="assets/home/images/project/project-image03.jpg" class="img-fluid" alt="project image">
+                              <div class="item project-wrapper" data-aos="fade-up" data-aos-delay="100">
+                                   <img src="assets/images/finka.jpg" class="img-fluid" alt="project image">
 
                                    <div class="project-info">
-                                        <small>Branding</small>
-
+                                        <small>1957051003</small>
 
                                         <h3>
-                                             <a href="project-detail.html">
-                                                  <span>Shoes factory</span>
-                                                  <i class="fa fa-angle-right project-icon"></i>
+                                             
+                                                  <span>Finka Marisa G.S</span>
+                                                  
                                              </a>
                                         </h3>
                                    </div>
                               </div>
 
-                              <div class="item project-wrapper" data-aos="fade-up">
-                                   <img src="assets/home/images/project/project-image04.jpg" class="img-fluid" alt="project image">
-                                   <div class="project-info">
-                                        <small>Social Media</small>
-
-
-                              <div class="item project-wrapper" data-aos="fade-up">
-                                   <img src="assets/home/images/project/project-image04.jpg" class="img-fluid" alt="project image">
-
-                                   <div class="project-info">
-                                        <small>Social Media</small>
-
-
-                                        <h3>
-                                             <a href="project-detail.html">
-                                                  <span>Race Bicycle</span>
-                                                  <i class="fa fa-angle-right project-icon"></i>
-                                             </a>
-                                        </h3>
-                                   </div>
-                              </div>
-
-                              <div class="item project-wrapper" data-aos="fade-up">
-                                   <img src="assets/home/images/project/project-image05.jpg" class="img-fluid" alt="project image">
-                                   <div class="project-info">
-                                        <small>Video</small>
-
-
-                              <div class="item project-wrapper" data-aos="fade-up">
-                                   <img src="assets/home/images/project/project-image05.jpg" class="img-fluid" alt="project image">
-
-                                   <div class="project-info">
-                                        <small>Video</small>
-
-
-                                        <h3>
-                                             <a href="project-detail.html">
-                                                  <span>Ultimate HealthCare</span>
-                                                  <i class="fa fa-angle-right project-icon"></i>
-                                             </a>
-                                        </h3>
-                                   </div>
-                              </div>
+                              
                          </div>
                     </div>
 
                </div>
           </div>
      </section>
-     <footer class="site-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-5 mx-lg-auto col-md-8 col-10">
-            <h1 class="text-white" data-aos="fade-up" data-aos-delay="100">Sistem Informasi <strong>Arus Surat</strong> 2021.</h1>
-          </div>
-          <div class="col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="200">
-            <h4 class="my-4">Contact Info</h4>
-
-
-               </div>
-          </div>
-     </section>
 
      <footer class="site-footer">
       <div class="container">
@@ -227,7 +139,6 @@ https://templatemo.com/tm-538-digital-trend
 
           <div class="col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="200">
             <h4 class="my-4">Contact Info</h4>
-
 
             <p class="mb-1">
               <i class="fa fa-phone mr-2 footer-icon"></i> 
@@ -245,11 +156,6 @@ https://templatemo.com/tm-538-digital-trend
           <div class="col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="300">
             <h4 class="my-4">Tempat</h4>
 
-
-          <div class="col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="300">
-            <h4 class="my-4">Tempat</h4>
-
-
             <p class="mb-1">
               <i class="fa fa-home mr-2 footer-icon"></i> 
               Jl. Prof. Dr. Ir. Sumantri Brojonegoro No.1, Gedong Meneng, Kec. Rajabasa, Kota Bandar Lampung, Lampung 35141
@@ -265,12 +171,6 @@ https://templatemo.com/tm-538-digital-trend
         </div>
       </div>
     </footer>
-
-
-        </div>
-      </div>
-    </footer>
-
 
 
      <!-- SCRIPTS -->
