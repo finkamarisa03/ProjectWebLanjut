@@ -110,7 +110,7 @@
             <ul class="nav nav-treeview">
               <li class="nav-item">
                 <a href="/admin/suratmasuk" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                  <i class="far fa-check-circle nav-icon"></i>
                   <p>
                     Valid
                   </p>
@@ -119,8 +119,8 @@
               </li>
               <li class="nav-item">
                 <a href="/admin/suratmasuknonvalid" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Tidak Valid</p>
+                  <i class="far fa-dot-circle nav-icon"></i>
+                  <p>Belum Valid</p>
                 </a>
               </li>
               

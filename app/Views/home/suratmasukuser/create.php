@@ -72,7 +72,7 @@ https://templatemo.com/tm-538-digital-trend
             </div>
             <div class="card-body">
             <form action="/home/suratmasukuser/store" method="POST">
-                <div class="row">
+                
                 <div class="form-group">
                             <label for="nomor">Nomor Surat</label>
                             <input type="text" class="form-control <?= ($validation -> hasError('nomor')) ? 'is-invalid' : ''; ?>" id="nomor" name="nomor" value="<?= old('nomor'); ?>">
@@ -122,7 +122,7 @@ https://templatemo.com/tm-538-digital-trend
                             <?php endif; ?>
                           </div>
                           
-                    </div>
+                    
                     
                 <button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i> Submit</button>                
                 </form>   

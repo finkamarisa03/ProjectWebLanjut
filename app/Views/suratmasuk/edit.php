@@ -27,7 +27,7 @@
             </div>
             <div class="card-body">
                 <form action="/admin/suratmasuk/update/<?= $suratmasuk['id']; ?>" method="POST">
-                    <div class="row">
+                    
                     <div class="form-group">
                             <label for="nomor">Nomor Surat</label>
                             <input type="text" class="form-control <?= ($validation -> hasError('nomor')) ? 'is-invalid' : ''; ?>" id="nomor" name="nomor" value="<?= old('nomor'); ?>">
@@ -76,7 +76,7 @@
                             </div>
                             <?php endif; ?>
                           </div> 
-                    </div>
+                    
                     <button type="submit" class="btn btn-primary">
                                 <i class="fas fa-paper-plane"></i> Edit
                     </button>

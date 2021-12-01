@@ -47,6 +47,7 @@
             ?>
               <tr>
                 <th><?= $count; ?></th>
+                <input type="hidden" name="id" value="<?= $data['id']?>"></td>
                 <td><?= $data['nomor']; ?> <input type="hidden" name="nomor" value="<?= $data['nomor'] ?>"></td>
                 <td><?= $data['nama']; ?> <input type="hidden" name="nama" value="<?= $data['nama'] ?>"></td>
                 <td><?= $data['tanggal']; ?><input type="hidden" name="tanggal" value="<?= $data['tanggal'] ?>"></td>
@@ -54,7 +55,7 @@
                 <td><?= $data['dok']; ?><input type="hidden" name="dok" value="<?= $data['dok'] ?>"></td>
 
                 <td>
-                  <button type="submit" class="btn btn-primary"><i class="fas fa-check"></i>Validasi</button>
+                  <button type="submit" class="btn btn-sm btn-primary me-1"><i ass="fas fa-check"></i>Validasi</button>
                   <a href="/admin/suratmasuknonvalid/delete/<?= $data['id']; ?>" class="btn btn-sm btn-danger me-1" onclick="return confirm('Yakin ingin Menghapus?');"><i class="fas fa-trash">Delete</i></a>
                 </td>
               </tr>

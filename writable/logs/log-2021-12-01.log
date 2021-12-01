@@ -1,0 +1,15 @@
+ERROR - 2021-12-01 09:23:40 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+CRITICAL - 2021-12-01 09:23:40 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+#0 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\vendor\codeigniter4\framework\system\Database\BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\app\Models\AdminModel.php(10): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\app\Controllers\login.php(19): App\Models\AdminModel->get_data('imamakbar@admin...', '12345678')
+#4 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\login->login_action()
+#5 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login))
+#6 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\SDP\\Do...')
+#9 {main}

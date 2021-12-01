@@ -10,4 +10,5 @@ class SuratMasukModel extends Model
 	protected $primaryKey           = 'id';
 	protected $allowedFields        = ['nomor','nama','tanggal','tujuan','dok'];
 	
+	
 }

@@ -114,6 +114,8 @@ class AdminSuratMasukController extends BaseController
 			session()->setFlashdata('gagal', 'Anda belum login');
 			return redirect()->to(base_url('login'));
 		 }
+		 
+		 
 		$PostModel = model("SuratMasukModel");
 		$PostModel->where('id', $id)->delete();
 		return redirect()->to(base_url('/admin/suratmasuk/'));
@@ -237,9 +239,13 @@ class AdminSuratMasukController extends BaseController
 				'tujuan' => $this->request->getVar('tujuan'),
 				'dok' => $this->request->getVar('dok')
 			];
-
+			$id_suratuser = [
+				'id' => $this->request->getVar('id')
+			];
 			$SuratMasukModel = model("SuratMasukModel");
 			$SuratMasukModel -> insert($data);
+			$SuratMasukUserModel = model("SuratMasukUserModel");
+			$SuratMasukUserModel -> where('id',$id_suratuser['id']) ->delete();
 			return redirect()->to(base_url('/admin/suratmasuk/'));
 		} else {
 			return redirect()->to(base_url('/admin/suratmasuk/create'))->withInput()->with('validation', $this->validator);

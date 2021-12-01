@@ -58,10 +58,17 @@ https://templatemo.com/tm-538-digital-trend
             </div>
         </div>
     </nav>
-
-
+<br>
+<br>
+<br>
+    <div class="container">
+        <div class="card">
+        <div class="card-header">
+        <h3><center>Surat Masuk Belum di Validasi</center></h3>
+            </div>
     <div class="card-body">
-        <h1><center>Surat Masuk Belum di Validasi</center></h1>
+    
+        
       <div class="table-responsive">
         <table class="table table-striped text-center">
           <thead>
@@ -92,12 +99,17 @@ https://templatemo.com/tm-538-digital-trend
         </table>
       </div>
     </div>
-
+    </div>
+    </div>
 <br>
 <br>
-
+<div class="container">
+        <div class="card">
+<div class="card-header">
+<h3><center>Surat Masuk Telah di Validasi</center></h3>
+          </div>
 <div class="card-body">
-        <h1><center>Surat Masuk Telah di Validasi</center></h1>
+        
       <div class="table-responsive">
         <table class="table table-striped text-center">
           <thead>
@@ -128,7 +140,8 @@ https://templatemo.com/tm-538-digital-trend
         </table>
       </div>
     </div>
-
+    </div>
+    </div>
     <br>
 <br>
 <br>

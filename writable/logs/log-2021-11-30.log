@@ -548,3 +548,30 @@ CRITICAL - 2021-11-30 18:36:22 --> Undefined variable: totalTime
 #6 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\vendor\codeigniter4\framework\system\CodeIgniter.php(316): CodeIgniter\Events\Events::trigger('pre_system')
 #7 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #8 {main}
+CRITICAL - 2021-11-30 18:43:14 --> Object of class App\Models\SuratMasukModel could not be converted to string
+#0 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\AdminSuratMasukController->delete('1')
+#1 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminSuratMasukController))
+#2 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\SDP\\Do...')
+#5 {main}
+CRITICAL - 2021-11-30 18:44:41 --> Undefined property: App\Controllers\AdminSuratMasukController::$SuratMasukModel
+#0 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\app\Controllers\AdminSuratMasukController.php(122): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\Users\\SDP\\Do...', 122, Array)
+#1 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\AdminSuratMasukController->delete('1')
+#2 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminSuratMasukController))
+#3 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\SDP\\Do...')
+#6 {main}
+CRITICAL - 2021-11-30 18:51:32 --> Undefined variable: suratmasukuser
+#0 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\app\Views\suratmasuk\index.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Users\\SDP\\Do...', 47, Array)
+#1 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\vendor\codeigniter4\framework\system\View\View.php(230): include('C:\\Users\\SDP\\Do...')
+#2 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\vendor\codeigniter4\framework\system\Common.php(1271): CodeIgniter\View\View->render('suratmasuk/inde...', Array, true)
+#4 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\app\Controllers\AdminSuratMasukController.php(18): view('suratmasuk/inde...', Array)
+#5 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\AdminSuratMasukController->index()
+#6 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminSuratMasukController))
+#7 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\SDP\Documents\GitHub\ProjectWebLanjut\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\Users\\SDP\\Do...')
+#10 {main}

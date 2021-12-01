@@ -103,7 +103,7 @@ https://templatemo.com/tm-538-digital-trend
 
                          <div class="about-image" data-aos="fade-up" data-aos-delay="200">
 
-                          <img src="assets\home\images\working-girl.png" class="img-fluid" alt="office">
+                          <img src="\assets\home\images\working-girl.png" class="img-fluid" alt="office">
                         </div>
                     </div>
 

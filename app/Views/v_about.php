@@ -51,7 +51,7 @@ https://templatemo.com/tm-538-digital-trend
                         <a href="/home/suratmasukuser/create" class="nav-link smoothScroll">Masukan Surat</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/home/suratmasukuser/" class="nav-link smoothScroll">Lihat Surat Masuk</a>
+                        <a href="/home/suratmasukuser" class="nav-link smoothScroll">Lihat Surat Masuk</a>
                     </li>
                     <li class="nav-item">
                         <a href="assets/about" class="nav-link contact">Tentang Kami</a>
