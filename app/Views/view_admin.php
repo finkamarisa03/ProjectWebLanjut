@@ -24,12 +24,15 @@
   
   <!-- Main content -->
   <section class="content">
+  
       <div class="container-fluid">
         <!-- Small boxes (Stat box) -->
         <div class="row">
           <div class="col-lg-3 col-6">
             <!-- small box -->
+            <a href="/admin/suratmasuk">
             <div class="small-box bg-info">
+            
               <div class="inner">
               <?php 
               $count = 0;
@@ -44,11 +47,12 @@
               <div class="icon">
                 <i class="nav-icon fas fa-arrow-alt-circle-down"></i>
               </div>
-            </div>
+            </div></a>
           </div>
           <!-- ./col -->
           <div class="col-lg-3 col-6">
             <!-- small box -->
+            <a href="/admin/suratkeluar" >
             <div class="small-box bg-success">
               <div class="inner">
               <?php 
@@ -64,12 +68,14 @@
               <div class="icon">
                 <i class="nav-icon fas fa-arrow-alt-circle-up"></i>
               </div>
-            </div>
+            </div> </a>
           </div>
 
           <div class="col-lg-3 col-6">
             <!-- small box -->
+            <a href="/admin/suratmasuknonvalid" >
             <div class="small-box bg-warning">
+            
               <div class="inner">
                 <?php
                 $count2 = 0;
@@ -83,7 +89,7 @@
               <div class="icon">
                 <i class="nav-icon fas fa-arrow-alt-circle-down"></i>
               </div>
-            </div>
+            </div> </a>
           </div>
 
           <div class="col-lg-3 col-6">

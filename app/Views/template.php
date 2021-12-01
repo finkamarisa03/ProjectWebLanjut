@@ -104,7 +104,7 @@
               <p>
                 Surat Masuk
                 <i class="fas fa-angle-left right"></i>
-                <span class="badge badge-info right">2</span>
+                <span class="badge badge-warning right">2</span>
               </p>
             </a>
             <ul class="nav nav-treeview">
@@ -164,7 +164,12 @@
 </div>
 <!-- ./wrapper -->
 
-
+<footer class="main-footer">
+    <div class="float-right d-none d-sm-block">
+      <b>Version</b> Beta.
+    </div>
+    <strong>Copyright &copy; 2021 <a href="http://ilkom.unila.ac.id/">Ilmu Komputer FMIPA Universitas Lampung</a>.</strong> All rights reserved.
+</footer>
     <!-- jQuery -->
 <script src="/assets/AdminLTE/plugins/jquery/jquery.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
