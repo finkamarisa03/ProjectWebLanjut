@@ -75,7 +75,7 @@ https://templatemo.com/tm-538-digital-trend
                             Ilmu Komputer FMIPA Universitas Lampung
                         </h2>
                             <br>
-                         <div class="owl-carousel owl-theme" id="project-slide">
+                         <!-- <div class="owl-carousel owl-theme" id="project-slide">
                               <div class="item project-wrapper" data-aos="fade-up" data-aos-delay="100">
                                    <img src="assets/images/imam.jpeg" class="img-fluid" alt="project image">
 
@@ -122,7 +122,7 @@ https://templatemo.com/tm-538-digital-trend
                               </div>
 
                               
-                         </div>
+                         </div> -->
                     </div>
 
                </div>

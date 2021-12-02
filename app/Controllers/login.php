@@ -26,7 +26,7 @@ class login extends BaseController
            return redirect()->to(base_url('admin'));
         } else {
            session()->setFlashdata('gagal', 'Email / Password salah');
-           return redirect()->to(base_url('admin'));
+           return redirect()->to(base_url('login'));
         }
     }else{
         session()->setFlashdata('gagal', 'Email / Password salah');
